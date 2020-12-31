@@ -5,7 +5,8 @@ html {
 /* Navbar */
 .navbar {
     font-family: 'Raleway';
-    transition: all 0.4s;  
+    transition: all 0.4s; 
+    background-color: rgb(197, 196, 194);
     
 }
 
