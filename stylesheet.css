@@ -1,92 +1,128 @@
-* {
-    box-sizing: border-box;
-  }
-  
-  body {
-    margin: 0;
-    font-family: "Lucida Grande";
-  }
-  
-  a {
-    text-decoration: none;
-  }
-  
-  .clear {
-    clear: left;
-  }
-  
-  .container {
-    max-width: 1170px;
-    padding: 0 15px;
-    margin: 0 auto;
-  }
+html {
+    scroll-behavior: smooth;
+}
 
-  .container h1 {
-      color: antiquewhite;
-  }
-  
-  
-  
-  header {
-    height: 65px;
-    width: 100%;
-    background-color: rgba(34, 49, 52, 0.9);
-    position :fixed;
-    top: 0;
-    z-index: 10;
-  }
-  
-  .logo {
-    width: 124px;
-    margin-top: 20px;
-  }
-  
-  .header-left {
-    float: left;
-  }
-  
-  .header-right {
-    float: right;
-    margin-right: -25px;
-  }
-  
-  .header-right a {
-    line-height: 65px;
-    padding: 0 25px;
-    color: white;
-    display: block;
-    float: left;
-    transition: all 0.5s;
-  }
-  
-  .header-right a:hover {
-    background-color: rgba(255, 255, 255, 0.3);
-  }
-  
-  .menu-icon{
-    color: white;
-    float: right;
-    font-size: 25px;
-    padding: 21px 0;
-    display: none;
-  }
+/* Navbar */
+.navbar {
+    font-family: 'Raleway';
+    transition: all 0.4s;  
+    
+}
 
-  main {
-    margin-top: 100px;
-    padding-left: 70px;
-    height: 400px;
-  }
-  
-  footer img {
-    width: 125px;
-  }
-  
-  footer p {
-    color: #b3aeb5;
-    font-size: 12px;
-  }
-  
-  footer {
-    padding-top: 30px;
-    padding-bottom: 20px;
-  }
+.nav-item {
+    margin-right: 20px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 21px;
+}
+
+.navbar .nav-link {
+    color: #fff;
+}
+
+.navbar-brand img {
+    height: 50px;
+}
+
+
+
+/* Jumbotron */
+
+.jumbotron {
+    background-image:url(../img/kerja1.jpeg) ;
+    background-size: cover;
+    height: 500px;  
+    position: relative;
+    
+}
+
+.jumbotron .display-4 {
+    font-family: 'Raleway';
+    font-weight: 400;
+    font-size: 45px;
+    color: #ffffff;
+    text-align: center;
+    margin-top: 200px;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, .5);
+
+}
+
+.jumbotron .display-4 span {
+    font-weight: 700;
+}
+
+/* ABOUT, services, contactUs */
+.about, .services, .contactus {
+    min-height: 500px;   
+}
+
+.about h1, .services h1, .contactus h1 {
+    font-size: 32px;
+}
+
+.about p, .services p, .contactus p {
+    font-size: 14px;
+}
+
+
+/* Akhir About */
+
+/* card */
+/* .card1 {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, .2);
+    border-radius: 5px;
+    
+} */
+
+
+/* akhir card */
+
+/* Services */
+
+/* Akhir Services */
+
+/* contact us */
+ 
+/* akhir contact Us */
+
+/* footer */
+footer {
+    background-color: rgb(199, 192, 192);
+    height: 150px;
+}
+/* akhir footer */
+
+
+/* Desktop Version */
+
+@media (min-width: 992px) { 
+    
+    .nav-link:hover::after {
+        content: '';
+        display: block;
+        border-bottom: 3px solid #000000;
+        width: 50%;
+        margin: auto;
+        padding-bottom: 5px;
+        margin-bottom: -8px;
+    }
+
+    .jumbotron {
+        height: 550px; 
+    }
+
+    .jumbotron .display-4 {
+        font-size: 62px;
+        text-align:left;
+        margin-top: 260px;
+        
+    }
+
+    .nav-item {
+        color: #111111;
+        text-shadow: 1px 1px 1px rgba(122, 122, 122, 0.15;
+        font-size: 16px;
+    }
+
+    
+}
